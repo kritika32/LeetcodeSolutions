@@ -13,15 +13,13 @@ class Solution {
                 if(diff==nd) ans = Math.max(ans,nums[i]);
             }
             else{
-                if(diff>nums[i])
+                if(diff>=nums[i])
                 {
                     diff = nums[i];
                     ans = nums[i];
                 }
-                 if(diff==nums[i]) ans = Math.max(ans,nums[i]);
             }
         }
         
         return ans;
     }
-}
